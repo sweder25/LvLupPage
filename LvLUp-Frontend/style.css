@@ -9,7 +9,9 @@ body{
     background-color: var(--fondo-negro);
     color: var(--texto-claro);
 }
-
+.hidden {
+  display: none !important;
+}
 .main-header {
   display: flex;
   justify-content: space-between;
