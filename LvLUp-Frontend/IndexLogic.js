@@ -12,8 +12,5 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-/* Agrega esto a style.css */
-.hidden {
-  display: none !important;
-}
+
 
