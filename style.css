@@ -3,9 +3,7 @@
   --texto-claro: #E0E0E0;
   --acento-neon: #00FFFF;
   --resalte-magenta: #FF00FF;
-  --accion-verde: #00FF66;
   --borde-metalico: #555555;
-  --hover-amarillo: #FFFF33;
 }
 body{
     background-color: var(--fondo-negro);
@@ -16,7 +14,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--borde-metalico);
+    background-color: var(--borde-metalico);
   color: var(--texto-claro);
   padding: 1rem 2rem;
   border-bottom: 1px solid var(--borde-metalico);
@@ -34,6 +32,9 @@ body{
 
 .logo {
   height: 40px;
+    height: 48px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--acento-neon);
 }
 
 .dropdown {
@@ -46,12 +47,13 @@ body{
   color: var(--acento-neon);
   font-weight: bold;
   cursor: pointer;
+    transition: color 0.2s;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1A1A1A;
+    background-color: var(--fondo-negro);
   border: 1px solid var(--borde-metalico);
   min-width: 160px;
   z-index: 1;
@@ -62,11 +64,13 @@ body{
   padding: 0.5rem 1rem;
   display: block;
   text-decoration: none;
+    background: none;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--hover-amarillo);
+  background-color: var(--resalte-magenta);
   color: var(--fondo-negro);
+    font-weight: bold;
 }
 
 .dropdown:hover .dropdown-content {
@@ -77,6 +81,7 @@ body{
   color: var(--accion-verde);
   font-weight: bold;
   text-decoration: none;
+    transition: color 0.2s;
 }
 
 .hidden {
