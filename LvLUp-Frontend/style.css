@@ -18,6 +18,10 @@ body {
   color: var(--texto-claro);
   font-family: 'Roboto', sans-serif;
 }
+.hidden {
+  display: none !important;
+}
+=======
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;
@@ -32,7 +36,6 @@ footer {
     flex-shrink: 0;
 }
 
-/* Estilos del encabezado y la navegación */
 .main-header {
   display: flex;
   justify-content: space-between;
