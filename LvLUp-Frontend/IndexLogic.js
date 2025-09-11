@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     renderAccountMenu();
 
-    // Delegar evento de logout
     accountMenu.addEventListener('click', function(e) {
         if (e.target && e.target.id === 'logout-link') {
             localStorage.removeItem('loggedIn');
